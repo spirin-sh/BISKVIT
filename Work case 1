@@ -54,3 +54,12 @@ Scalable
 Supports collaboration
 Branching is easier
 Distributed development
+
+
+
+Що таке "комміт", як він дозволяє відслідковувати зміни у файлах? (Краснопір Богдан)
+Commit - це всі збережені дії та зміни, що проводилися в репозиторії.
+
+When we do any changes in our project we are adding commit for each change. Commit is used as a "save point" in our projects. 
+That mean when you add the commit, you make a record of changes, so you can see what did you do wrong.
+The reason for this is pretty simple, we don't want to lose our progress because of bug or any other bad thing. It's better to go back than lose all progress.
