@@ -60,6 +60,36 @@ Integration Services – набір служб, що дозволяє покра
 
 
 
+Хід роботи (Краснопір Богдан)
+    1. Перерахуйте етапи для розгортання операційної системи на базі віртуальної машини VirtualBox.
+        1.1. Firstly, you need to download VirtualBox from official site (you need to chose software, that supports you OS). 
+        1.2. Secondly, run setup file and install it.
+        1.3. Open VirtualBox and press button “Create”, that appears at the middle atop of the window.
+        1.4. Now enter name of virtual machine, type of operating system and other.
+        1.5. After this, you need to set up some security settings. 
+        1.6. Now you need to chose how much of computer resources (such as RAM, CPU and hard disk) will be used to run your virtual machine.
+        1.7. In the end, you’ll see your final configuration of your virtual machine.
+        1.8. Click “Finish” and it will launch the installation of virtual OS and after installation you can use it.
+    2. Чи є якісь апаратні обмеження при встановленні 32- та 64-бітних ОС?
+	Yes, because every OS uses some amount of computer resources. If you try to install 64-bit OS on 32-bit computer – it’ll fail, because 32-bit OS supports less amount of memory (4 Gb of RAM). 
+	Also, as mentioned before, each OS uses certain amount of computer resources. This means that minimal resources are required to install and run any OS.
+	For example, 32-bit Windows 10 requires at least 1 GB of RAM and 16 GB of HDD space. 64-bit Windows 10 requires at least 2 GB of RAM and 20 GB of HDD space.
+    3. Які основні етапи при встановленні OS Linux в текстовому режимі?
+        3.1. Installing a Disk Image file of chosen Linux distribution.
+        3.2. Start of installation.
+        3.3. Setting disk partition up.
+        3.4. Installation of basic system (installation of kernel, basic system files and other)
+        3.5. Basic system configuration (adding users, installation of network settings, OS loader set up and other processes)
+        3.6. End of installation and restart of system.
+    4. *Яким чином можна до установити графічні оболонки Gnome та KDE в Linux, якщо вона вже встановлена в текстовому режимі (вкажіть необхідні attractiveкоманди та пакети)? 
+           To do this firstly you need to update your packages in terminal. To do this, write “sudo apt update”. After this, we can install Gnome or KDE packages, to do this write “sudo apt instal <package name>”
+           Name of packages for Gnome: «ubuntu-desktop-minimal», «vanilla-gnome-desktop», «vanilla-gnome-default-settings»
+           Name of packages for KDE: «kde-full», «kde-standart», «kde-plasma-desktop», «kde-plasma-netbook»
+           All of these packages are minimum to work with, so you can add some other.
+    5. **Дайте коротку характеристику графічних інтерфейсів, що використовуються в різних дистрибутивах Linux  відповідно до свого варіанту (порядковий номер по журналу), табл.2. (KDE та Fluxbox)
+           Fluxbox is very simple Windows Manager that consump small amount of computer resources. With Fluxbox you’ll not see window and other animations, but it have all functionality to work with files. Its simplicity making it good to use for work on poor PC.
+           KDE, unlike Fluxbox, is not just Windows Manager, it’s a complete Desktop Enviroment. That mean all the different parts are integrated into it, providing a consistent look-and-feel. That makes it more resource needy. But it’s also very good to use for work, and in some points, better than Fluxbox in everyday use.
+
 
 
 Контрольні запитання (Микитенко Назарій)
