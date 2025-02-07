@@ -1,1 +1,60 @@
 Завдання для попередньої відготовки (Клімчук Ярослав)
+1.dictionary:
+Virtualization – віртуалізація
+Type 1 Hypervisor – гіпервізор першого типу (працює безпосередньо на апаратному забезпеченні)
+Type 2 Hypervisor  – гіпервізор другого типу (працює поверх операційної системи)
+Virtual Machine Monitor – монітор віртуальної машини
+Guest OS – гостьова операційна система
+Java Virtual Machine – віртуальна машина Java
+Cloud computing – хмарні обчислення
+Dedicated hosting – виділений хостинг
+Shared hosting – спільний хостинг
+Storage management – управління зберіганням даних
+2.
+2.1 A hypervisor, also known as a virtual machine monitor or VMM, is software that creates and runs virtual machines (VMs). 
+A hypervisor allows one host computer to support multiple guest VMs by virtually sharing its resources, such as memory and processing.
+Hypervisors make it possible to use more of a system’s available resources and provide greater IT mobility since the guest VMs are independent of the host hardware. 
+This means they can be easily moved between different servers.
+Tyepes of hypervisors:
+There are two main hypervisor types, referred to as “Type 1” (or “bare metal”) and “Type 2” . 
+A type 1 hypervisor acts like a lightweight operating system and runs directly on the host’s hardware, while a type 2 hypervisor runs as a software layer on an operating system, like other computer programs.
+The most commonly deployed type of hypervisor is the type 1 or bare-metal hypervisor, where virtualization software is installed directly on the hardware where the operating system is normally installed. 
+Because bare-metal hypervisors are isolated from the attack-prone operating system, they are extremely secure. In addition, they generally perform better and more efficiently than hosted hypervisors. For these reasons, most enterprise companies choose bare-metal hypervisors for data center computing needs.
+2.2 Hyper-V Technology Overview
+Hyper-V is Microsoft's hardware virtualization product. It lets you create and run a software version of a computer, called a virtual machine. 
+Each virtual machine acts like a complete computer, running an operating system and programs. 
+When you need computing resources, virtual machines give you more flexibility, help save time and money, and are a more efficient way to use hardware than just running one operating system on physical hardware.
+
+Hyper-V runs each virtual machine in its own isolated space, which means you can run more than one virtual machine on the same hardware at the same time. 
+You might want to do this to avoid problems such as a crash affecting the other workloads, or to give different people, groups, or services access to different systems.
+
+Hyper-V offers many features. This is an overview, grouped by what the features provide or help you do.
+
+Computing environment - A Hyper-V virtual machine includes the same basic parts as a physical computer, such as memory, processor, storage, and networking. 
+All these parts have features and options that you can configure different ways to meet different needs. 
+Storage and networking can each be considered categories of their own, because of the many ways you can configure them.
+
+Disaster recovery and backup - For disaster recovery, Hyper-V Replica creates copies of virtual machines, intended to be stored in another physical location, 
+so you can restore the virtual machine from the copy. For backup, Hyper-V offers two types. 
+One uses saved states and the other uses Volume Shadow Copy Service (VSS) so you can make application-consistent backups for programs that support VSS.
+
+Optimization - Each supported guest operating system has a customized set of services and drivers, called integration services, 
+that make it easier to use the operating system in a Hyper-V virtual machine.
+
+Portability - Features such as live migration, storage migration, and import/export make it easier to move or distribute a virtual machine.
+
+Remote connectivity - Hyper-V includes Virtual Machine Connection, a remote connection tool for use with both Windows and Linux. 
+Unlike Remote Desktop, this tool gives you console access, so you can see what's happening in the guest even when the operating system isn't booted yet.
+
+Security - Secure boot and shielded virtual machines help protect against malware and other unauthorized access to a virtual machine and its data.
+Основні компоненти Hyper-V
+Гіпервізор  – основний компонент, який управляє доступом гостьових операційних систем до апаратного забезпечення.
+Virtual Machine Management Service  – служба управління віртуальними машинами, яка відповідає за їх створення, запуск та конфігурацію.
+Virtual Machine Worker Process – процес, що керує виконанням кожної окремої віртуальної машини.
+Hyper-V Manager – графічний інтерфейс для управління віртуальними машинами та їх параметрами.
+Hyper-V PowerShell Module – набір команд PowerShell для автоматизації адміністрування віртуальних машин.
+Hyper-V Virtual Switch – віртуальний комутатор для налаштування мережевих з'єднань між віртуальними машинами та зовнішніми мережами.
+Storage Migration – можливість переміщувати віртуальні диски між сховищами без зупинки VM.
+Dynamic Memory – технологія автоматичного розподілу пам’яті між віртуальними машинами залежно від їхнього навантаження.
+Integration Services – набір служб, що дозволяє покращити взаємодію гостьової ОС з хост-системою (драйвери, синхронізація часу, буфер обміну тощо).
+
