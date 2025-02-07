@@ -132,3 +132,12 @@ which can provide them with the ability to relatively easily connect, process da
 8. Text mode (level 3): sudo systemctl set-default multi-user.target
 Graphical mode (level 5): sudo systemctl set-default graphical.target
 The text interface has less resource consumption, precise control, and ease of automation. The graphical interface, in turn, is more intuitive, but consumes more resources and is more difficult to automate.
+
+
+Висновки:
+Операційна система - це комплекс програмного забезпечення та програм, що виконують управління апаратною частиною комп'ютера. 
+Є різні ОС, вони можуть відрізнятися архітектурою, ядром, інтерфейсом користувача, основним призначенням та ще багато чим.
+Але в основному все сходиться до двох основних дій: розподіл апаратних ресурсів комп'ютера та перетворення машиного коду в зрозумілі для людини абстракції. 
+Більшість ОС пов'язані між собою історично, адже вони (не всі) пішли від іншої ОС. 
+Не можна сказати що є погана чи хороша ОС, адже у кожної своє призначення - це робота з великим масивом даних (сервером наприклад) чи повсякденне використання (як Windows чи Android), або навість існують просто жартівливі ОС.
+Просто історично існують застарілі ОС, які використовувати зараз просто недоцільно.
