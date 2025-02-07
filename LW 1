@@ -58,3 +58,47 @@ Storage Migration – можливість переміщувати віртуа
 Dynamic Memory – технологія автоматичного розподілу пам’яті між віртуальними машинами залежно від їхнього навантаження.
 Integration Services – набір служб, що дозволяє покращити взаємодію гостьової ОС з хост-системою (драйвери, синхронізація часу, буфер обміну тощо).
 
+
+
+
+
+Контрольні запитання (Микитенко Назарій)
+1. Type 1 Hypervisor is a software layer that is installed directly on top of a physical server and its underlying hardware. 
+Its code takes up hundreds of times less space than modern OSes. 
+This means that the possibility of a critical error occurring is significantly reduced. 
+The security of the system responsible for virtualization is achieved by fully transferring the resources of the physical machine 
+under the control of the virtual one. Type 1 hypervisors are mainly used in corporate environments.
+
+Type 2 Hypervisor is installed on top of an installed operating system. In fact, this type is an application of the main OS that is running. 
+Linux is often chosen for stable operation. All physical resources and emulation are managed from the host OS. 
+A type 2 hypervisor has fewer powers than a type 1 hypervisor. Type 2 hypervisors are usually used in environments with a small number of servers.
+
+2. GNU General Public License is a copyleft license for free software. 
+The purpose of the GNU GPL is to give the user the rights to copy, modify, and distribute the program, and the obligation that users of 
+any derivative programs also receive these rights. Its basic concept is that anyone is free to use the program for any purpose, 
+to study its operation and modify it to suit their needs, and to distribute both the original and modified versions of the program, 
+as long as the rights to the original program are preserved.
+
+3. Open source software is a type of software whose source code is freely available for anyone to view, use, modify, and distribute. 
+The essence of this software is the ability for both developers and users to adapt the program to their needs, 
+which facilitates collaborative development and rapid improvement or creation of a product or application.
+
+4. This is a set of files prepared for installing software. It contains all the necessary components, such as installation files, libraries, 
+configuration files, and other resources that ensure the correct operation of the program after installation. 
+Distributions can be presented in the form of archives, disk images, or special installers that simplify the process of distributing and installing software.
+
+5. User and group management; process management; file system management; monitoring and diagnostics; task automation; network configuration management; 
+system security; backup and recovery; package management; virtualization;
+
+6. Android is based on a modified Linux kernel. Although Android is based on the Linux kernel, it is somewhat separate from the Linux community and infrastructure. 
+Android is also not a traditional Linux distribution, as it does not include standard GNU components such as the glibc library, instead using its own Bionic library.
+
+7. Among the features of Embedded Linux, one can highlight its compatibility with many processor architectures, such as ARM, x86, MIPS, 
+which allows it to be integrated into various devices and systems. The ability to quickly detect and fix faults and vulnerabilities, 
+thanks to open source and a large community. Embedded Linux is used in many areas: in everyday life, medicine, the automotive industry, 
+automation of industries themselves, telecommunications and the Internet of Things IoT, as many such devices are based on Embedded Linux, 
+which can provide them with the ability to relatively easily connect, process data and integrate with various devices.
+
+8. Text mode (level 3): sudo systemctl set-default multi-user.target
+Graphical mode (level 5): sudo systemctl set-default graphical.target
+The text interface has less resource consumption, precise control, and ease of automation. The graphical interface, in turn, is more intuitive, but consumes more resources and is more difficult to automate.
