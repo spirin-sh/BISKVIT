@@ -171,7 +171,96 @@ sudo -i
 
 
 
-
-
-
 Котрольні запитання (Краснопір Богдан)
+
+1. Наведіть приклади серверних додатків Linux для сервера баз даних, серверів розсилки повідомлень та файлообмінників.
+
+Сервер баз данних: PostgreSQL, MySQL, MongoDB, Redis, CouchDB, SQLite, ClickHouse, Firebird.
+Сервери розсилки повідомлень: Sendmail, Prosody, Haraka, Exim, RabbitMQ, Apache Kafka, Postfix, Dovecot.
+Файлообмінники: Nextcloud, MinIO, vsftpd, Samba, GlusterFS, Resilion Sync, ProFTPD, Seafile.
+
+2. Порівняйте оболонки Bourne, C, Bourne Again (Bash), the tcsh, Korn shell (Ksh) та zsh.
+
+Bourne (sh) – випущена 1977 року, використовується в багатьох UNIX-подібних системах як інтерактивний командний інтерпретатор. 
+Всі основні оператори скопійовані з мови Ангол 68. Одна з перших оболонок, що була поширена спочатку в навчальних закладах, а потім і в інших сферах.
+
+C (csh) – розроблена в 1979 році, за функціоналом та потужністю схожа на оболонку Борна, але відрізнялася синтаксисом, адже роль макета тут грала мова «С» (звідси і назва). 
+На даний момент використовується в усіх нащадках 4.1BSD, в тому числі й FreeBSD та OpenBSD.
+
+Bourne again shell (bash) – вдосконалений sh був випущений 1989 року. Sh є нащадком bash. 
+Через це операції в bash виконуються схожим, а іноді й таким самим чином як і в sh. 
+Але bash має більше можливостей: додалися робота з історією, розширені оператори, автодоповнення, робота з масивами та інші можливості.
+
+TENEX C Shell (tcsh) – представляє собою розширену версію csh. В порівнянні з csh тут додалися такі функції: автодоповнення команд і файлів, покращена історія команд, більше вбудованих розширень, підтримка тем та інші.
+
+Z shell (zsh) – розроблена 1990 року. В собі поєднує риси bash і tcsh. 
+Зручним його зробили такі функції: гнучка система вибірки файлів, можливість редагування багатоядерних команд, потужні засоби автодоповнення вводу, велика кількість додатків та ще багато фунцій. 
+
+Korn Shell (ksh) – випущена 1983 року, базований на Bourne. Має зворотню сумісність з Bourne. 
+Серед особливостей: вирази, схожі на «C», ієрархія змінних, динамічний пошук, математичні функції та інші. В основному використовується в BSD.
+
+Отже, для користування краще вибирати новіші оболонки, такі як bash, zsh, tcsh та ksh. 
+Вони мають в собі більше вбудованих функцій та можливостей. Яку саме використовувати залежить вже від UNIX-подібної системи, що використовується.
+
+3. Для чого потрібен менеджер пакетів. Які менеджери пакетів ви знаєте у Linux?
+
+Менеджер пакетів забезпечує зручне встановлення програм, їх видалення, оновлення та слідкувати за тим, які програми встановлені.
+Менеджери пакетів відрізняються за форматом пакетів та дистрибутивом.
+Для дистрибутивів на основі Debian – dpkg, APT.
+Для дистрибутивів на основі Arch Linux – pacman. yay, paru.
+Для дистрибутивів на основі SUSE – zypper, YaST.
+Є також і крос-дистрибутивні — Flatpack, Snap, AppImage
+
+4. *Які засоби безпеки використовуються в Linux? 
+
+В Linux використовуються такі засоби безпеки:
+      4.1. Контроль доступу. There is two user modes: User and Kernel mode. In user mode you have restricted access to certain programs, unlike in Kernel mode. Also, you can change permissions to certain users.
+      4.3. Аутентифікація — defines who is logged and user permissions. By instruments  (such as PAM and Fail2Ban) you can add some complications to log in process.
+      4.4. Захист системних процесів — there we are talking about access control to system processes and their interaction. Examples of such means – SELinux, AppArmour, cgroups, Namespaces.
+      4.5. Мережева безпека — it’s about don’t missing unwanted packages, sites, unwanted control and other. Examples are the same, as on other OS: VPN (WireGuard, OpenVPN), Firewall (ufw, iptables, nftables).
+      4.6. Моніторинг безпеки — purpose of doing it is determinate where unwanted activity is, find out where suspicious files and processes are. Examples are Log-files, Auditd, Chkrootkit, Lynis.
+
+5. *Чому використання віртуалізації зараз стало таким актуальним?
+
+Because of it’s usefulness. You can excrete some of computer resources to create multiple virtual machines on one computer. 
+To do this you need to install hypervisor, and to make it work you need virtualization. 
+By using hypervisor you can have on your computer OS with different kernel, run multiple OS, isolated from each other, on the same time, manage files between these OS and safely do dangerous tests, like starting viruses. 
+That is required in data centers. 
+Also it used to create virtual memory, if there is not enough RAM, to create virtual desktop (VDI) and other.
+
+6. *Як ви розумієте поняття контейнеризації?
+
+Containerization – is a packaging of software code, that allows you to run programs in isolated containers. That containers can be run on any infrastructure.
+
+7. *Які переваги/недоліки використання програмного забезпечення з відкритим кодом? 
+
+  Advantages of using open-source software (OSS):
+        ◦ Most of the tools are free to download and use, that provides a significant financial benefit to users and companies.
+        ◦ Because it’s free to use and to explore code, its much easier to customize and more flexible. That allows user to make own modification of program or just customize it to make more suitable.
+        ◦ OSS programs are often scalable. That means user or company can increase the scale of software to required dimensions.
+        ◦ Security is better on OSS than proprietary software. It’s because in OSS code is transparent, because of this users can find out where and why the problem can appear or just have appeared.
+	Disadvantages of using OSS:
+        ◦ OSS often lacks of professional support team. Often this role is done by community forums and contributors. Because of this there is no guaranteed response to your problem.
+        ◦ You’ll need to train employees to work with software.
+        ◦ Secure of OSS can play on other hand, providing the intruder to find vulnerability and use it to hack someone or else.
+        ◦ One big disadvantage to OSS is that often when you doing software, that based on OSS, it’s also must be open-source. Those like requirements are provided by some licenses, like GNU.
+
+8. **Скільки активних віртуальних консолей (терміналів) може бути у процесі роботи Linux по замовчуванню. Як їх викликати та між ними перемикатися? Наведіть приклади?
+
+За замовчуванням максимальна кількість терміналів становить n-ну кількість (в більшості дистрибутивів це 6), це залежить від дистрибутиву та ресурсів комп’ютера. 
+Цей параметр можна змінити у спеціальному файлі.
+Щоб викликати консоль треба відкрити спеціальний ярлик або натиснути комбінацію Ctrl+Alt+T. 
+Щоб перемикатися між ними можна використовувати клавіші Ctrl+Alt+F1/F6. Замість F1 в деяких дистрибутивах використовують F2, бо F1 відповідає за GUI, тобто перелік терміналів починається з F2 і так до максимального числа.
+
+9. **Яка віртуальна консоль (термінал) виконує функцію графічної оболонки?
+
+Два найпонулярніші представника таких терміналів: X11 та Wayland. Вони створюють GUI в терміналі.
+
+10. **Чи можлива реєстрація в системі Linux декілька разів під одним і тим же системним ім’ям? Які переваги це може надати?
+
+Ви можете створити декілька користувачів з одним і тим же ім’ям, але у них повинен відрізнятися UID. Це ідентифікатор, що гарантує унікальність користувача серед інших.
+Якщо мова йдеться чи можна запустити одразу декілька сесій як один користувач, то так, можна.
+
+
+
+
