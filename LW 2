@@ -1,3 +1,36 @@
-Завдання попередньої підготовки (Микитенко Назарій)
+Завдання для попередньої підготовки (Микитенко Назарій)
+
+1.(П.1) 
+Command Line Interface (CLI) – Інтерфейс командного рядка, текстова система введення команд для керування комп’ютером.
+Graphical User Interface (GUI) – Графічний інтерфейс користувача, зручний візуальний спосіб взаємодії з операційною системою.
+Terminal – Термінал, програма або середовище для введення команд в інтерфейсі командного рядку.
+Virtual Terminal – Віртуальний термінал, текстове середовище, яке працює незалежно від графічного інтерфейсу користувача.
+Console – Консоль, середовище роботи з командним рядком, часто використовується синонімічно до терміналу.
+Kernel – Ядро операційної системи, що керує ресурсами та взаємодіє з додатками.
+Application – Додаток або програма, яка виконує певні функції на комп’ютері.
+API (Application Programming Interface) – Інтерфейс програмування додатків, набір правил для взаємодії з ядром ОС.
+Multitasking – Багатозадачність, здатність системи виконувати кілька процесів одночасно.
+Process – Процес, виконувана програма або її частина.
+Server Application – Серверний додаток, програма, що обробляє дані для клієнтів.
+Client Application – Клієнтський додаток, програма, що взаємодіє із сервером для отримання даних.
+Desktop Application – Настільний додаток, програма, з якою користувач взаємодіє безпосередньо.
+Tools – Інструменти, спеціалізоване програмне забезпечення для керування системою.
+Resources – Ресурси системи, такі як пам’ять, процесорний час і дисковий простір.
+Command – Команда, інструкція, що виконується у інтерфейсі командного рядку.
+Script – Скрипт, набір команд, що виконується послідовно для автоматизації завдань.
+
+2.(П.4)
+CLI mode (Command-Line Interface) is a mode of operation of a computer system in which the user interacts with the operating system or 
+software through text commands entered into a terminal or console. In CLI mode, there is no graphical interface, 
+and commands are executed by entering them into the command line.
+
+A Graphical User Interface (GUI) terminal is software or a device that provides access to the command line of an operating system or remote server 
+through a graphical interface.
+
+A Virtual Terminal (VT) is a software or hardware interface that allows interaction with an operating system through a command line or terminal session. 
+In Unix systems, virtual terminals (TTYs) allow the user to switch between multiple text sessions independently of the graphical environment. 
+In networking technologies, virtual terminals can also be used to remotely control systems via Telnet or SSH.
+
+
 
 Котрольні запитання (Краснопір Богдан)
