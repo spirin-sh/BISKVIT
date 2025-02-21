@@ -167,6 +167,48 @@ A variable in Bash is a named container for storing data, such as strings or num
 > Деякі параметри можна комбінувати, тому тут показано не всі варіації команд.
 
 
+## 2. Робота в терміналі
+
+### 1) Creating variables for our first and last names names, aliases for born year callendar and displaying it by command "echo":
+
+![alt text](https://cdn.discordapp.com/attachments/853338697985687574/1342578960793469028/2025-02-21_204521.png?ex=67ba2598&is=67b8d418&hm=25d843e6c9780ed9a8d7a6fda6da54c2b72767387b63f87aeabdaef28aaf71b9&)
+
+![alt text](https://cdn.discordapp.com/attachments/853338697985687574/1342578960508260384/2025-02-21_204749.png?ex=67ba2598&is=67b8d418&hm=5ce2bc4a9c0dd02ad1caa7d323029eb6d2c033a6dc17de1407ff7f99836daebf&)
+
+![alt text](https://cdn.discordapp.com/attachments/853338697985687574/1342578960118054993/2025-02-21_205018.png?ex=67ba2598&is=67b8d418&hm=346c3d635374cd717c69d898a51060915728881d94f59be50ea98b3bd451df4b&)
+
+>Example one of the callenders:
+
+![alt text](https://cdn.discordapp.com/attachments/853338697985687574/1342578959891828757/2025-02-21_205109.png?ex=67ba2597&is=67b8d417&hm=c57f32239b9827370d5e43ee7f8febe97965189aaf7e4337a9c0f3836f140f8c&)
+
+### 2) Creatinf function "student_report":
+
+![alt text](https://cdn.discordapp.com/attachments/853338697985687574/1342578959468199986/2025-02-21_205618.png?ex=67ba2597&is=67b8d417&hm=6aa29d8b54ed445edf24b10453aeda5c4abb54235b3e5b2d7ad74175ce9bb4d0&)
+
+![alt text](https://cdn.discordapp.com/attachments/853338697985687574/1342578959111557150/2025-02-21_205640.png?ex=67ba2597&is=67b8d417&hm=ac703403a124f77638471345665022da9aee6d6876160c74a33069a2cd4570a5&)
+
+### 3) Work with quotes. 
+   Its necessary to put right quotes on right place. Result:
+   
+![alt text](https://cdn.discordapp.com/attachments/853338697985687574/1342578958549385287/2025-02-21_210245.png?ex=67ba2597&is=67b8d417&hm=7fdf19d6d2574c4258c7503b2d0c21c47a728660020b8b23e50d4ef9e59cd67d&)
+
+![alt text](https://cdn.discordapp.com/attachments/853338697985687574/1342578958297862206/2025-02-21_210531.png?ex=67ba2597&is=67b8d417&hm=c9178c3f34910f810e4502ca30b0fbc78aa05ce32f3904beb49fb18c3137df2c&)
+
+### 4) Work with control statements. 
+   They allows us to do commands succesively. Here is the results:
+
+![alt text](https://cdn.discordapp.com/attachments/853338697985687574/1342578976312266803/2025-02-21_211526.png?ex=67ba259b&is=67b8d41b&hm=25c10cff6c117e88d1187956958a8625e2af0d6c19143bcaaa1b9b0644c41f5b&)
+
+![alt text](https://cdn.discordapp.com/attachments/853338697985687574/1342578976006213662/2025-02-21_211835.png?ex=67ba259b&is=67b8d41b&hm=ad9d2388ac88ff7ca22906424437a3ade6ec56212f5665457d8e684716a13fcf&)
+
+### 5) Work with manual page. 
+   For example we'll use command "uname". To complete this task, we must fing 5 options to this command and share screenshot of it's result. Here is is:
+
+![alt text](https://cdn.discordapp.com/attachments/853338697985687574/1342578975653761055/2025-02-21_212335.png?ex=67ba259b&is=67b8d41b&hm=b2fc1825d677f02ba5218885452650b34dfaaa085628016c4fcba8305a49b40a&)
+
+![alt text](https://cdn.discordapp.com/attachments/853338697985687574/1342578975318347807/2025-02-21_212441.png?ex=67ba259b&is=67b8d41b&hm=f8ca4c9ff694349e95eb0026df03eec8fcf8f839b74464e40aa5eea0a18a93ed&)
+
+
 # Контрольні запитання (Микитенко Назарій)
 ## Відповіді на контрольні запитання:
 ***1.*** There are two types of commands in the Bash shell: internal and external.
