@@ -1,3 +1,115 @@
+# Завдання для попередньої підготовки (Клімчук Ярослав)
+
+## Словник термінів
+
+**Command Line Interface (CLI)** - An interface that allows users to interact with the operating system through text commands.
+
+**Shell** - An interpreter that processes entered commands and passes them to the operating system for execution.
+
+**Command** - An instruction to perform a specific action within the operating system.
+
+**Argument** - Additional information provided to a command for processing.
+
+**Option (parameter)** - A modifier that changes the behavior of a command.
+
+**Prompt** - The command-line prompt that displays user, system, and current directory information.
+
+**Alias** - A shortcut or nickname for a command.
+
+**Variable** - A storage unit for values used in Bash.
+
+## Відповіді на питання
+
+### 4. Визначення поняттям:
+
+**Command interpreter** – A program that executes user-entered commands.
+
+**Shell** – A software environment that interprets commands and manages program execution in the operating system.
+
+**Command** – A text-based instruction to perform an operation in the command-line interface.
+
+### 5.Відповіді на запитання
+
+1. **Яку базову інформацію надає рядок запрошення prompt?**  
+   The prompt contains:
+   
+    Username
+   
+    System name
+   
+    Current directory
+
+2. **Для чого команді потрібні параметри та аргументи?**  
+Command parameters and arguments are used to customize the behavior of a command and pass necessary data. They allow the command to work with different input options and change the way it executes.
+
+Arguments are values ​​passed to a command and usually indicate what the command should work with.
+
+Parameters change the behavior of the command.
+
+3. **Яке призначення команд ls, які параметри та аргументи вона може мати? Наведіть 3 приклади.**  
+   The `ls` command is used to display a list of files and directories.  
+   Examples:
+   - `ls` – List files in the current directory.
+   - `ls -l` – Display detailed file information.
+   - `ls /etc` – Show contents of the `/etc` directory.
+
+**Arguments can be:** 
+
+*Directory path:*
+
+ls /home/user/Documents
+
+*Specific file or files:*
+
+ls file1.txt file2.txt
+
+*Masks for file groups:*
+
+ls *.txt
+     
+
+4. **Яким чином можна використати історію команд, які переваги це надає?**  
+Command history is a list of previously executed commands in a terminal or command line.
+
+**Advantages of command history:**
+ - Save time - you don't have to type the same commands again, you can call them from the history.
+ - Reduce errors - you can find and fix erroneous commands without re-entering them.
+ - Automation - using history helps create scripts based on previously executed commands.
+ - Analysis of work - you can review what was executed in the past for debugging or reporting.
+
+**Ways to use command history:**
+ - View history
+ - Re-execute commands
+ - Search history
+ - Save history
+ - Clear history
+
+5. **Яке призначення команди `echo`?**  
+   The `echo` command outputs text or variable values to the terminal.
+
+6. **Охарактеризуйте поняття змінної в оболонці Bash, які типи змінних вона підтримує?**  
+A variable in Bash is a named container for storing data, such as strings or numbers. They are used to store environment settings, temporary values, and parameters in scripts.
+
+*Types of variables in Bash*:
+
+  - Local variables
+ - Global variables
+ - Positional variables
+ - Special variables
+ - Environment variables
+
+8. **Яке призначення команд `env`, `export` та `unset`?**  
+   - `env` – View environment variables.
+   - `export` – Create global variables.
+   - `unset` – Remove variables.
+
+9. **Які команди для отримання довідки по командам в терміналі ви знаєте?**  
+   - `man <command>` – Command documentation.
+   - `info <command>` – More detailed documentation.
+   - `--help` – Short command help.
+   - `apropos <keyword>` – Search for commands by description.
+
+
 # Хід роботи (Краснопір Богдан)
 ## 1. Таблиця команд та їх опис
 | Назва команди | Її призначення |
