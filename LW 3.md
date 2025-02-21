@@ -1,9 +1,3 @@
-# Відповіді на контрольні запитання
-## Микитенко Назарій
-1. 
-
-
-
 # Хід роботи (Краснопір Богдан)
 ## 1. Таблиця команд та їх опис
 | Назва команди | Її призначення |
@@ -59,3 +53,33 @@
 }
 
 > Деякі параметри можна комбінувати, тому тут показано не всі варіації команд.
+
+
+# Контрольні запитання (Микитенко Назарій)
+## Відповіді на контрольні запитання:
+***1.*** There are two types of commands in the Bash shell: internal and external.
+**Internal** — commands integrated into the shell, which are in the computer's RAM during operation.
+**External** - stored as files in the system directory.
+
+***2.*** Environment variables are dynamic named values ​​that affect the behavior of processes running on the computer. They also allow you to customize the program execution environment without changing their code. There are three types of environment variables: system environment variables, user variables, and local variables. 
+System environment variables are loaded immediately when the operating system is started and stored in certain configuration files. System changes are the most important and are initiated by the operating system and applied to all users and processes. 
+User variables are set by individual users and are valid only within their directories and session. 
+Local variables are valid only within one current session. When it is completed, they will be permanently deleted and everything will have to be created manually to start again, and they are not saved in separate files.
+
+***3.*** The *$PS1* variable selects the main Bash seed prompt string. This line is shown every time before the skin command. To see the current value of PS1, there is a command: *echo $PS1* .
+
+***4.*** You can change the value of the *$PS1* variable by setting it to a new value with the export **PS1=" hihihaho@euu> "** command, which will change the appearance of the main prompt line in Bash. To make these changes permanent, add *~/.bash_profile* .
+
+***5.*** The double quotes tell the shell to treat the text between the quotes ("...") as normal characters.
+
+***6.*** Control instructions are used to interact with the operating system through the CLI. Types of instructions: file commands *(ls, mv)*, navigation commands *(cd)*, user management commands *(adduser, deluser)*, process management commands *(ps, kill)*, system commands *(shutdown, systemctl)*, network commands *(ssh, ping)*, package management commands *(apt)*.
+
+***7.*** In Bash, the symbol at the end of the prompt line indicates the user's privileges, for example: 
+**$** *is a regular user* and **#** *is a root user*.
+
+***8.*** The *whereis* and *locate* commands are used to find files.
+whereis is used to find the location of executable files, source code, and manual pages for a given command, and searches for these files in standard system directories such as */bin*, */sbin*, */usr/bin*, and others. Locate is used to quickly find files in the file system by name, and this command works on the basis of a pre-created database containing information about files and their locations, but this database must be regularly updated using the updatedb command.
+
+# Висновок
+During the laboratory work, the CLI mode of the Linux operating system was considered, as well as the features of CLI mode commands. As a result of the laboratory work 3, basic knowledge of CLI mode commands and basic terminal mode text commands used in various operating systems were mastered, as well as their description and features.
+
