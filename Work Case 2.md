@@ -69,3 +69,73 @@
 
 >Після цього необхідно оновити пакети та систему для подальшого використання (`sudo apt upgrade` та `sudo apt update`)
 
+
+## Порівняння Xfce з Gnome (Клімчук Ярослав)
+
+### Загальні відомості
+
+**Xfce** - is a lightweight desktop environment for UNIX-based operating systems. Xfce aims to be fast and light on system resources, while remaining visually appealing and easy to use.
+- Initial Release: 1996  
+- Key Principle: A classic desktop with panels, menus, and minimal effects  
+- Architecture: Built on GTK+ (version 2, later 3, partially supports GTK4)  
+- Default Look: Similar to Windows 95/XP, with a classic menu and taskbar  
+- Components:  
+  - xfwm – Built-in window manager  
+  - Thunar – Lightweight file manager  
+  - Xfce Panel – Customizable panel for menus, tray icons, and window switching  
+  - Xfce Settings – Set of configuration utilities
+     
+**Gnome** - focuses on creating a completely free environment accessible to all users regardless of technical skill level, physical limitations, or language. Within GNOME, both native applications for end users are developed, as well as a set of tools for creating new applications that integrate tightly with the desktop environment.
+- Initial Release: 1999  
+- Key Principle: Minimalist design with a focus on simplicity and gesture-based interaction  
+- Architecture: GTK4, full Wayland support  
+- Default Look: No traditional menu, replaced by "Activities Overview"  
+- Components:  
+  - Mutter – Window manager  
+  - Nautilus – File manager  
+  - GNOME Shell – Main shell with gesture navigation  
+  - GNOME Control Center – Centralized settings panel
+
+### Основні відмінності
+
+| Feature            | Xfce                        | GNOME                      |
+|--------------------|----------------------------|----------------------------|
+| **Resource Usage** | 200-500MB RAM, low CPU load | 600+MB RAM, higher CPU usage |
+| **Speed**         | Fast, works well on older PCs | Moderate, requires modern hardware |
+| **Simplicity**    | Classic, familiar interface | Minimalist, takes time to adapt |
+| **Customization** | High, can tweak panels, buttons | Lower, requires extensions |
+| **Functionality** | Basic but extendable | Wide application ecosystem |
+| **Wayland Support** | No support | Full support |
+| **Stability**     | Very stable, rare breaking updates | Some changes may break compatibility |
+| **Best For**      | Older PCs, users who prefer a classic style | New devices, users who prefer modern aesthetics |
+
+## Плюси та мінуси
+
+### Xfce
+**Pros:**
+Lightweight, fast, perfect for low-end machines  
+Classic, convenient interface without unnecessary effects  
+Flexible customization of panels, menus, and hotkeys  
+
+**Cons:**
+Fewer visual effects, outdated look  
+Slow development cycle, rare updates  
+No Wayland suppor
+
+### GNOME
+**Pros:**
+Modern, minimalist design  
+Supports gestures, Wayland, and new technologies  
+Rich ecosystem of integrated applications    
+
+**Cons:**
+High resource usage  
+Limited out-of-the-box customization without extensions  
+
+## Owerall
+If you need **a highly customizable, lightweight environment** → **Xfce**  
+If you want **a modern desktop with strong technological integration** → **GNOME**  
+
+
+
+
