@@ -2,7 +2,7 @@
 ### Створення нової віртуальної машини;
 1. Click *"Create"* in the tool window.
 2. Enter the name of the virtual machine.
-3. Select the type and version of the OS to be installed. In our case, it is Windows 7 64-bit.
+3. Select the type and version of the OS to be installed. In our case, it is Linux with GNOME GUI.
 4. Specify the amount of RAM that will be allocated for the virtual machine *(at least 2 GB is recommended)*. To make the virtual machine not too heavy, it is better to allocate 50% of the memory that is available on the main PC.
 1. Specify the hard disk parameters and select the file type of the virtual disk of the machine. In *"Expert mode"* you can find more hard disk settings if necessary.
 2. Select the storage format *(in our case it is "dynamic")*.
