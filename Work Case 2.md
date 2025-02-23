@@ -1,9 +1,23 @@
-Опишіть набір базових дій в встановленому Вами гіпервізорі. (Микитенко Назарій)
-- Створення нової віртуальної машини;
-- Вибір/додавання доступного для віртуальної машини обладнання;
-- Налаштування мережі та підключення до точок Wi-Fi;
-- Можливість роботи з зовнішніми носіями (flash-пам’ять).
+## Опишіть набір базових дій в встановленому Вами гіпервізорі. (Микитенко Назарій)
+### Створення нової віртуальної машини;
+1. Click *"Create"* in the tool window.
+2. Enter the name of the virtual machine.
+3. Select the type and version of the OS to be installed. In our case, it is Windows 7 64-bit.
+4. Specify the amount of RAM that will be allocated for the virtual machine *(at least 2 GB is recommended)*. To make the virtual machine not too heavy, it is better to allocate 50% of the memory that is available on the main PC.
+1. Specify the hard disk parameters and select the file type of the virtual disk of the machine. In *"Expert mode"* you can find more hard disk settings if necessary.
+2. Select the storage format *(in our case it is "dynamic")*.
+3. Click *"Create"*.
 
+### Вибір/додавання доступного для віртуальної машини обладнання;
+In the settings window, you can change the settings in the *"System"*, *"Media"*, *"Network"* and *"USB"* sections. For example, to add an optical drive, go to *"Media"*, click the add device icon, select 
+*"Add optical drive"* and specify an ISO file or a physical drive. In the *"Network"* section, you can enable the adapter and select the connection type *(NAT or network bridge)*. After saving the changes, click *"OK"* and start the virtual machine.
+
+### Налаштування мережі та підключення до точок Wi-Fi;
+First, you need to open the virtual machine settings and go to the "Network" section, where you need to activate the adapter. In the "Connected to" field, you need to select the appropriate network mode. Most often, for simple access to the Internet, NAT mode is used, which allows the guest operating system to use the host connection without additional settings. In this case, in the "Name" field, you need to select the Wi-Fi adapter of the host computer *(for example, "Wi-Fi" or "wlan0")*. After saving the changes, first, to check the operability, start the virtual machine and check the Internet connection using the ping command in the command line terminal.
+
+### Можливість роботи з зовнішніми носіями (flash-пам’ять);
+First, download and install the latest version of the *VirtualBox Extension Pack*. This will add support for *USB 2.0* and *3.0*. 
+Then you need to restart the system for the changes to take effect. After restarting VirtualBox, click *"Settings"* - *"USB"*. Enable the *USB 2.0 or 3.0* controller, add a new USB filter so that VirtualBox automatically connects the device to the virtual machine. In the *"Devices"* menu, select "USB" and click on the desired flash drive to connect it to the virtual machine.
 
 ## Практична частина (Краснопір Богдан)
 
