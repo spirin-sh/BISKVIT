@@ -114,3 +114,49 @@
 
 
 ## Контрольні запитання (Микитенко Назарій)
+1.	Яке призначення директорії /proc в системах Linux. Яку інформацію вона зберігає?
+
+The */proc* command provides an interface for obtaining system and process information, and is also used to configure kernel parameters in real time. It stores process information, kernel and system information, and kernel settings.
+
+2.	Як серед будь-яких трьох процесів динамічно визначати, який з них в поточний момент часу використовує найбільший обсяг пам'яті? Який відсоток пам’яті він споживає від загального обсягу?
+
+To do this, periodically get the amount of memory used by three processes using the command *ps -o pid,comm,%mem,rss -p PID1,PID2,PID3*. The largest process will be in first place. 
+To determine the percentage of memory out of the total, can use *free -m* or *grep MemTotal /proc/meminfo*, and then calculate the ratio.
+
+3.	Як отримати ієрархію батьківських процесів в системах Linux? Наведіть її структуру та охарактеризуйте.
+
+The hierarchy of parent processes can be obtained using the command *pstree -p, pstree -p username, pstree -sp <PID>*
+
+### Структура ієрархії:
+
+![alt text](https://media.discordapp.net/attachments/1079721811064913972/1345079738401820692/Screenshot_1.png?ex=67c33ea0&is=67c1ed20&hm=f5c99cfa019b64706fd9f478d5f1f08abc92f789c1ac920905239d2563e80405&=&format=webp&quality=lossless&width=435&height=341)
+
+All processes originate from systemd or init, and each process has its own parent process, which can *fork()* child processes. 
+If a process terminates but its status is not read by the parent process, it becomes a so-called *zombie*.
+
+4.	*Чим відрізняється команда top від ps?
+*Ps* and *top* have two main differences:
+1. *ps* provides a static snapshot of the state of processes, while *top* provides a dynamic, constantly updated display.
+2. *ps* is designed to display information without the ability to interact, while *top* allows you to manage processes and configure the display of information in real time.
+
+
+5.	*Які додаткові можливості реалізує htop в порівнянні з top?
+
+*htop* is an improved version of *top* with a color interface, graphical resource usage indicators, and convenient process management using the keyboard and mouse. 
+It supports a tree view of processes, flexible column settings, fast search, and allows you to kill processes without entering the *PID* (making it easier to kill processes).
+
+6.	**Опишіть компоненти вашої мобільної ОС для здійснення моніторингу запущених в системі процесів?
+
+In my operating system (Android), monitoring of running processes is carried out using the components **Activity Manager, Process Stats, Linux Kernel**.
+**Activity Manager** manages the life cycle of applications and monitors active processes.
+**Process Stats** collects and analyzes process statistics, evaluates their performance and resource usage.
+**Linux Kernel** is a kernel that provides low-level monitoring and management of processes through mechanisms such as the task scheduler and interprocess communication tools.
+
+7.	**Чи підтримує Ваша мобільна ОС термінальне керування роботою процесів, опишіть як саме.
+
+If you use a tool like a terminal emulator, then yes, Android supports terminal process management. Since Android is built on the Linux kernel, it has a command shell available that can already be opened through a terminal emulator, for example: **Termux**.
+
+8.	**Чи можливо поставити сторонні програмні засоби, що дозволяють організувати управління та моніторинг роботою процесів у Вашому мобільному телефоні. Коротко опишіть їх.
+
+This is possible, although modern versions of Android impose some restrictions due to security measures. For example, applications such as **3C Toolbox** or **SystemPanel 2** allow you to view the list of running processes, analyze RAM usage and CPU load, and perform basic management. Some advanced features (for example, access to system processes) may require root rights, since the standard Android architecture restricts third-party applications from accessing important system resources.
+
