@@ -190,6 +190,64 @@ Bring a process to the foreground:
 
 *Or we can use command Kill*
 
+### 3
+
+3.1
+
+![Image](https://github.com/user-attachments/assets/56626af5-78ee-4be9-baf7-f587a6710497)
+
+top is a utility for monitoring process activity in real time.
+
+For me, the most energy-consuming is the browser and Discord
+
+3.2
+
+**All System Processes:**
+
+>*ps aux*
+
+**Processes of a Specific User:**
+
+>*ps -u username*
+
+**Process Tree Structure:**
+
+>*ps axjf*
+
+**Specific Process by PID:**
+
+>*ps -p 1234*
+
+**Top Memory-Consuming Processes:**
+
+>*ps aux --sort=-%mem*
+
+3.3 **Background processes**
+
+>systemd
+
+>dnsmasq
+
+>nginx
+
+>pipewire
+
+
+3.4 **Resume Suspended Process**
+
+Foreground:
+
+>fg %1
+
+Background:
+
+bg %1
+
+3.5 ** Terminate Background Process**
+
+>kill %1
+
+
 
 
 ## Контрольні запитання (Микитенко Назарій)
