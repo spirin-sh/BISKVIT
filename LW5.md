@@ -1,5 +1,95 @@
 ## Завдання для попередньої підготовки (Микитенко Назарій)
 
+## Хід роботи (Клімчук Ярослав)
+
+### Перелік команд з курсу Linux
+
+
+| **Command**                  | **Explanation**                                                                                   |
+|------------------------------|---------------------------------------------------------------------------------------------------|
+| **Navigation and Listing**   |                                                                                                   |
+| `ls`                         | Lists directory contents (Note: `ls` is not directly in the text but implied; use `dir` in some contexts). |
+| `pwd`                        | Prints the current working directory (e.g., `/home/user`).                                       |
+| `cd`                         | Changes the current directory (e.g., `cd /path` moves to specified path).                        |
+| `cd Documents`               | Moves to the "Documents" directory in the current location.                                      |
+| `cd Junk`                    | Moves to the "Junk" directory in the current location.                                           |
+| `ls -a`                      | Lists all files, including hidden ones (starting with `.`).                                      |
+| `ls -l`                      | Lists files in long format (details like permissions, owner, size).                              |
+| `ls -d`                      | Lists directories themselves, not their contents (e.g., `ls -d /etc`).                          |
+| `ls -ld`                     | Combines `-l` and `-d`: long format for directories only.                                        |
+| `ls -R`                      | Lists recursively, showing contents of subdirectories.                                           |
+| `ls -S`                      | Sorts files by size, largest first.                                                             |
+| `ls -lrt`                    | Long format (`-l`), reverse order (`-r`), sorted by modification time (`-t`).                    |
+| `ls -t`                      | Sorts files by modification time, newest first.                                                 |
+| `ls -lrS`                    | Long format (`-l`), reverse order (`-r`), sorted by size (`-S`).                                |
+| `ls -tl`                     | Sorts by time (`-t`), in long format (`-l`).                                                    |
+| `ls -lSh`                    | Long format (`-l`), sorted by size (`-S`), with human-readable sizes (`-h`).                    |
+| `ls -lS`                     | Long format (`-l`), sorted by size (`-S`).                                                      |
+| **Globbing with `echo`**     |                                                                                                   |
+| `echo /etc/t*`               | Displays files in `/etc/` starting with "t" (e.g., `timezone`).                                 |
+| `echo /etc/*.d`              | Displays files in `/etc/` ending with ".d" (e.g., `apparmor.d`).                                |
+| `echo /etc/r*.conf`          | Displays files in `/etc/` starting with "r" and ending with ".conf" (e.g., `resolv.conf`).      |
+| `echo /etc/t???????`         | Displays files in `/etc/` starting with "t" and exactly 7 characters long (e.g., `termcap`).    |
+| `echo /etc/*????????????????????` | Displays files in `/etc/` with 16+ characters (e.g., long filenames).                     |
+| `echo /etc/*.???`            | Displays files in `/etc/` with a 3-character extension (e.g., `foo.bar`).                       |
+| `echo /etc/[gu]*`            | Displays files in `/etc/` starting with "g" or "u" (e.g., `group`, `udev`).                     |
+| `echo /etc/[a-d]*`           | Displays files in `/etc/` starting with "a" to "d" (e.g., `apt`, `bash.bashrc`).                |
+| `echo /etc/*[9-0]*`          | Likely a typo; intended `[0-9]` matches files with digits (e.g., `rc0.d`). Reverse range invalid.|
+| `echo /etc/*[0-9]*`          | Displays files in `/etc/` containing digits (e.g., `rc3.d`).                                    |
+| `echo /etc/[!a-t]*`          | Displays files in `/etc/` not starting with "a" to "t" (e.g., `udev`, `xattr.conf`).            |
+| **File Operations**          |                                                                                                   |
+| `ls /etc/adduser.conf`       | Lists specific file `/etc/adduser.conf` (checks existence).                                     |
+| `ls /etc/alternatives`       | Lists contents of `/etc/alternatives` directory.                                                |
+| `ls /etc/x*`                 | Lists files in `/etc/` starting with "x" (e.g., `xattr.conf`).                                  |
+| `cp /etc/hosts ~`            | Copies `/etc/hosts` to the user's home directory (`~`).                                         |
+| `cp -v /etc/hosts ~`         | Copies `/etc/hosts` to `~` with verbose output (`-v`) showing the action.                       |
+| `cp /etc/hosts ~/hosts.copy` | Copies `/etc/hosts` to `~/hosts.copy` (new filename).                                           |
+| `cp /etc/hostname example.txt` | Copies `/etc/hostname` to `example.txt` in the current directory.                             |
+| `cat example.txt`            | Displays the contents of `example.txt`.                                                         |
+| `cp /etc/timezone example.txt` | Overwrites `example.txt` with contents of `/etc/timezone`.                                    |
+| `ls -l example.txt`          | Lists `example.txt` in long format (shows details).                                             |
+| `cp -i /etc/skel/.* ~`       | Copies hidden files from `/etc/skel/` to `~`, prompting before overwrite (`-i`).                |
+| `cp -n /etc/skel/.* ~`       | Copies hidden files from `/etc/skel/` to `~`, no overwrite if files exist (`-n`).               |
+| `cp -r source_directory destination_directory` | Copies `source_directory` and its contents to `destination_directory` recursively (`-r`). |
+| `mv source destination`      | Moves or renames `source` to `destination`.                                                     |
+| `ls -l sample`               | Lists `sample` in long format (checks details).                                                 |
+| `rm sample`                  | Deletes the file `sample`.                                                              |
+| `touch sample`               | Creates an empty file named `sample` (or updates its timestamp if it exists).                   |
+| `rm Videos`                  | Attempts to delete `Videos` (fails if it’s a directory; use `rm -r Videos` for directories).    |
+
+### 3. Робота в терміналі
+
+![Image](https://github.com/user-attachments/assets/46775a21-c661-4d70-b01f-20723bad1c7f)
+
+![Image](https://github.com/user-attachments/assets/2ad0c34e-d013-4791-aad3-8ea0e13554ad)
+
+![Image](https://github.com/user-attachments/assets/0dab2426-e780-4035-a850-bd0005bd53d2)
+
+![Image](https://github.com/user-attachments/assets/3a7d2688-9edd-44d8-818b-2e47b363e387)
+
+![Image](https://github.com/user-attachments/assets/68e5442c-b6cc-48b8-a460-f002cf450b9b)
+
+![Image](https://github.com/user-attachments/assets/5a0920da-6b39-40fc-83b4-43c2e122f818)
+
+![Image](https://github.com/user-attachments/assets/18608dd1-8d4b-4f03-b2a4-2d40b1e5e02d)
+
+![Image](https://github.com/user-attachments/assets/fda9345f-fe00-43b0-b02b-ba0fef49cab4)
+
+### 4. Оптс команд
+
+
+| **Command**   | **Where It Takes You**                  |
+|---------------|----------------------------------------|
+| `cd /`        | Moves to the root directory (/), the top-level directory of the file system.                  |
+| `cd /home`    |  Moves to the /home directory, which typically contains user home directories.                   |
+| `cd ~`        | Moves to the home directory of the current user (/home/username or another designated home path).                 |
+| `cd`          | Equivalent to cd ~, moves to the user's home directory.               |
+| `cd ..`       | Moves up one level in the directory hierarchy (to the parent directory).                     |
+| `cd ../..`    | Moves up two levels in the directory hierarchy.                      |
+| `cd -`        | Switches to the previous working directory.                     |
+
+
+
 
 ## Контрольні запитання (Краснопір Богдан)
 
