@@ -1,4 +1,57 @@
+# Лабораторна робота №5
+
+## Тема: “Знайомство з командами навігації по файловій системі та керування файлами та каталогами”
+
+## Мета роботи:
+
+1. Отримання практичних навиків роботи з командною оболонкою Bash.
+   
+2. Знайомство з базовими командами навігації по файловій системі.
+
+3. Знайомство з базовими командами для керування файлами та каталогами.
+
 ## Завдання для попередньої підготовки (Микитенко Назарій)
+
+### Словник базових англійських термінів:
+|№|термін|переклад|
+|---|------------------------------|-----------------------------------|
+|1. |	Filesystem                   | файлова система                   |
+|2. |	Directory                    | каталог                    |
+|3. | Root directory               | кореневий каталог                 |
+|4. |	Command Line Interface (CLI) | інтерфейс командного рядка        |
+|5. |	Navigate                     | переміщатися |
+|6. |	Permissions                  | права доступу                     |
+|7. |	Move (mv)                    | перемістити або перейменувати     |
+|8. |	Copy (cp)                    | копіювати                         |
+|9. |	Remove (rm)                  | видалити                          |
+|10.|	Hidden files                 | приховані файли                   |
+|11.|	Home directory               | домашній каталог                  |
+|12.|	Mount point                  | точка монтування                  |
+|13.|	Wildcard (globbing)          | шаблон пошуку                     |
+
+### Відповіді на питання
+
+**2.1**. Windows has a tree-like file structure where each drive (C:, D:) is a separate file system. The main directory for the user is *C:\Users\Username\.*
+In turn, in Linux, the entire file system is organized in the form of a single tree, starting from the root directory */.* Disks are mounted as subdirectories *(/mnt, /media).*
+
+**2.2**. FHS (Filesystem Hierarchy Standard) is a standard that defines the location of system files and directories in Linux. It establishes uniform rules for different distributions, which ensures compatibility and predictability of the file system. For example, the command:
+
+*/bin, /sbin* – executable files
+*/etc* – configuration files
+*/home* – user directories
+*/var* – variable data (logs, cache)
+*/tmp* – temporary files
+
+**2.3.** Basic commands for working with files and directories in Linux.
+
+2.3.1. Creation - *touch filename, mkdir dirname*
+
+2.3.2. Move - *mv source destination*
+
+2.3.3.	Copying - *cp source destination, cp -r dir1 dir2*
+
+2.3.4.	Delete - *rm filename, rm -r dirname*
+
 
 ## Хід роботи (Клімчук Ярослав)
 
@@ -129,3 +182,8 @@ To delete directory we use `rm -r` command. By default `rm` does't delete direct
 
 
 ## Висновок
+
+During the laboratory work, the basic commands for working with the file system in Linux were considered, including directory navigation, file manipulation (copying, moving, deleting),
+using wildcards (globbing) and performing operations through the terminal.
+Various parameters of the *ls* command were studied to view files and their characteristics, as well as the *echo, cat, cp, mv, rm,* commands that allow you to work effectively with files and directories.
+During the practical part, a set of test operations in the terminal was performed in accordance with the tasks and answers to control questions were completed.
