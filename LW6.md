@@ -125,3 +125,133 @@
 |$ cat myfile *pipe* grep student *pipe* wc -l|Результат `cat myfile` передається до `grep student`, результат якого в свою чергу передається до `wc -l`|STDOUT або STDERR від `cat myfile` до `grep student`, STDOUT або STDERR від `grep student` до `wc -l`, |
 
 Знак конвеєра довелося замінити словом *pipe*, бо цей | символ відповідає за створення нових колокок в таблиці в .md файлі.
+
+## Відповіді на контрольні запитання(Клімчук Ярослав)
+
+### 1. Надайте порівняльну характеристику процесам стискання та архівування.
+
+| **Feature**        | **Compression**                                              | **Archiving**                                                        |
+|--------------------|---------------------------------------------------------------|----------------------------------------------------------------------|
+| **Purpose**        | Reducing file size by removing redundancy.                    | Combining multiple files/directories into a single container.        |
+| **Result**         | A smaller, compressed file.                                   | An archive file that includes multiple files or directories.         |
+| **Algorithms**     | Utilizes compression algorithms (Deflate, LZMA, Zstd, etc.).  | May not compress (e.g., `tar`), but packages files together.        |
+| **Common Usage**   | Works on single files or archive containers.                  | Handles multiple files and directories, maintaining their structure. |
+| **Examples**       | `gzip`, `bzip2`, `xz`, `zstd`.                               | `tar`, `cpio`, `ar`. Often combined with compression (`tar.gz`).    |
+
+---
+
+### 2. Які програми, окрім наведених в роботі, можуть використовуватись для стискання та архівування файлів та каталогів в ОС Linux? Наведіть приклади та їх короткий опис.
+
+
+-  7zip
+  
+   7-Zip is a free and open-source file archiver, a utility used to place groups of files within compressed containers known as "archives". Most of the 7-Zip source code is under the LGPL-2.1-or-later license; the unRAR code, however, is under the LGPL-2.1-or-later license with an "unRAR restriction", which states that developers are not permitted to use the code to reverse-engineer the RAR compression algorithm.
+  - -Zip port for Linux.
+  - **Algorithms**: LZMA / LZMA2.
+  - **Formats Supported**: 7z, zip, tar, rar, and others.
+  - **Features**: High compression ratio, AES-256 encryption.
+
+---
+
+-  lrzip (Long Range ZIP)
+  
+  lzip is a free, command-line tool for the compression of data; it employs the Lempel–Ziv–Markov chain algorithm (LZMA) with a user interface that is familiar to users of usual Unix compression tools, such as gzip and bzip2.
+
+Like gzip and bzip2, concatenation is supported to compress multiple files, but the convention is to bundle a file that is an archive itself, such as those created by the tar or cpio Unix programs. Lzip can split the output for the creation of multivolume archives.
+
+The file that is produced by lzip is usually given .lz as its filename extension, and the data is described by the media type application/lzip.
+  - Optimized for compressing large files.
+  - **Algorithms**: LZMA, Bzip2, ZPAQ.
+  - **Features**: Excellent compression for large files using hybrid algorithms.
+
+
+---
+
+### 3. Порівняйте алгоритми стискання, що використовуються в командах (програмах), використовуваних в Linux. Які з алгоритмів можна вважати найшвидшим та найефективнішим?
+
+
+| **Algorithm**  | **Tools/Commands** | **Compression Speed** | **Compression Ratio** | **Notes**                                       |
+|----------------|--------------------|-----------------------|-----------------------|-------------------------------------------------|
+| **gzip** (Deflate) | `gzip`, `gunzip` | High                 | Medium                | Fast, widely supported.                        |
+| **bzip2**      | `bzip2`, `bunzip2` | Slower than gzip     | Better than gzip      | Supports multiple compression levels.          |
+| **xz** (LZMA2) | `xz`, `unxz`       | Slow                 | Very High             | High efficiency, higher memory usage.          |
+| **zstd**       | `zstd`, `unzstd`   | Very High            | Flexible (configurable) | Excellent trade-off between speed and ratio.   |
+| **LZO / LZ4**  | `lzop`, `lz4`      | Extremely High       | Below Average         | Ultra-fast, ideal for real-time compression.    |
+
+- **Fastest algorithms**: LZ4, Zstd.
+- **Most efficient algorithms**: xz, lrzip.
+
+---
+
+### 4. Опишіть програмні засоби для стискання та архівування, що можуть бути використані у вашому мобільному телефоні.
+
+
+
+ Android
+- **ZArchiver**
+  - Supports: zip, rar, 7z, tar, gzip, bzip2, etc.
+  - Features: Archive creation, extraction, encryption, content preview.
+
+- **RAR for Android**
+  - From the makers of WinRAR.
+  - Supports: RAR, ZIP, 7z, TAR, GZ.
+  - Features: Repair corrupted archives, encryption.
+
+- **B1 Archiver**
+  - Supports 30+ archive formats.
+  - Features: Password-protected archives, file preview without extraction.
+
+---
+
+### 5. Опишіть та порівняйте програмні засоби для стискання та (де)архівування даних у ОС сімейства Windows.
+
+- WinRAR
+Supports RAR, ZIP, 7z and other formats.
+AES-256 encryption, the ability to split archives into parts.
+Interface: graphical and console.
+
+- 7-Zip
+Free, open source.
+Proprietary 7z (LZMA2) format, supports zip, rar, tar, gzip, iso, etc.
+High compression efficiency.
+
+- WinZip
+Supports zip, rar, 7z, tar and other formats.
+Commercial product, integration with cloud services, encryption.
+
+
+| **Program**  | **Formats Supported**   | **Algorithm**  | **Features**                                              |
+|--------------|-------------------------|----------------|-----------------------------------------------------------|
+| **7-Zip**    | 7z, zip, tar, rar, etc. | LZMA2          | Open-source, high compression efficiency.                 |
+| **WinRAR**   | rar, zip, 7z, etc.      | Proprietary    | Large archive support, multi-volume, AES encryption.      |
+| **WinZip**   | zip, rar, 7z, tar, etc. | Proprietary    | Cloud integration, encryption, and a user-friendly GUI.   |
+
+---
+
+### 6. Поясніть яким чином стиснення та архівування даних може бути використано для резервування даних. В яких ще задачах системного адміністрування воно може бути використано.
+
+**Data Backup**: Compression reduces storage needs and speeds up transfers by packing files into smaller archives (e.g., .tar.gz). Archiving simplifies management by bundling files into single units.
+
+Other Sysadmin Uses:
+
+- Log rotation
+
+- Data sharing
+
+- Software distribution (smaller installers/updates)
+
+- Data migration 
+
+- System migration
+
+- Database/VM backups 
+
+- Compliance 
+
+- Disk space optimization
+---
+
+### 7. Яке призначення директорії файлу /dev/null?
+
+
+In Unix-like systems, /dev/null is a special file that discards any data written to it and returns nothing when read. It’s used to suppress output (e.g., echo "text" > /dev/null), silence errors (e.g., ls /nonexistent 2> /dev/null), or provide empty input (e.g., cat /dev/null > file.txt). Essentially, it’s a "black hole" for data.
