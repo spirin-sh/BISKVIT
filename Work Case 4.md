@@ -30,5 +30,21 @@
   - sudo apt autoclean - очищує систему та видаляє непотрібні пакети разом з непотрібними репозиторіями.
 
 ## 3. Встановіть у терміналі через менеджер пакетів на свою систему. (Краснопір Богдан)
+  
+  I've installed the VLC media player as an example.
 
+#### Instalation of VLC:
 
+  First we enter `sudo apt install vlc`. After we are confirming instalation by typing "y"
+  
+![image](https://github.com/user-attachments/assets/2202eb2c-dbcc-4fc8-ad85-eaaa4c30d7df)
+
+  After instalation, we can find VLC player in our App Manager:
+  
+![image](https://github.com/user-attachments/assets/e1b0b0ef-8229-409a-8338-2ff51a55f4a7)
+
+  To test if player works correctly, i've opened sound file with .flac format and it's playing it without problem:
+
+![image](https://github.com/user-attachments/assets/b52c264e-f434-43c1-999d-7b929dad65af)
+
+#### Instalation of IDE for programing language have the same proces, as before. The only diference is that your program may not be founded in standard repository, so you'll need to add a new one, that contains needed program. Process of instalation also can be simplyfied by using a software store.
