@@ -1,3 +1,157 @@
+## 1.Робота з менеджерами пакетів
+
+### 1.1 Дайте розгорнуте визначення таким поняттям як «пакет» та «репозиторій».
+
+#### What is a **Package**?
+A **Package** is an archive that contains the necessary files to install and run a piece of software on a Linux system. It typically includes:
+- Executable files or binaries
+- Libraries required for the program
+- Configuration files
+- Metadata describing dependencies and versioning
+- Scripts to automate installation and removal processes
+
+Common package formats:
+- **.deb** — for Debian-based distributions (Ubuntu, Linux Mint)
+- **.rpm** — for Red Hat-based distributions (Fedora, CentOS, openSUSE)
+- **.tar.gz**, **.tar.xz** — compressed archives, often used for source code distribution.
+
+#### What is a **Repository**?
+A **Repository** is a centralized storage location where software packages are kept and maintained. Repositories are used by package managers to retrieve and install software.
+
+Repositories can be:
+- **Official** — provided and maintained by the distribution maintainers.
+- **Third-party** — provided by external developers or communities.
+
+A repository contains:
+- Packages (applications, libraries, updates)
+- Metadata (version info, dependencies, digital signatures)
+- Security patches and bug fixes
+
+
+### 1.2 Надайте короткий огляд існуючих менеджерів пакетів у Linux. Охарактеризуйте їх основні можливості.
+A **Package Manager** is a tool that automates the process of installing, updating, configuring, and removing software packages on a Linux system.
+
+---
+
+#### APT (Advanced Package Tool)
+- **Distributions**: Debian, Ubuntu, Linux Mint, and derivatives
+- **Package Format**: `.deb`
+- **Common Commands**:
+  - `sudo apt update` — refresh package lists
+  - `sudo apt install <package>` — install a package
+  - `sudo apt upgrade` — upgrade all packages
+  - `sudo apt remove <package>` — remove a package
+- **Key Features**:
+  - Simple and user-friendly
+  - Handles dependencies automatically
+  - Supports multiple repositories
+  - Integration with PPAs (Personal Package Archives)
+
+---
+
+#### DNF (Dandified YUM)
+- **Distributions**: Fedora, Red Hat Enterprise Linux (RHEL), CentOS (from version 8)
+- **Package Format**: `.rpm`
+- **Common Commands**:
+  - `sudo dnf check-update` — check for available updates
+  - `sudo dnf install <package>` — install a package
+  - `sudo dnf upgrade` — upgrade all packages
+  - `sudo dnf remove <package>` — remove a package
+- **Key Features**:
+  - Improved dependency management over YUM
+  - Faster downloads and installation
+  - Supports plugins for extended functionality
+  - Caching of metadata for efficiency
+
+---
+
+#### YUM (Yellowdog Updater Modified)
+- **Distributions**: Older Fedora, CentOS, and RHEL versions
+- **Package Format**: `.rpm`
+- **Common Commands**:
+  - `sudo yum check-update` — check for updates
+  - `sudo yum install <package>` — install a package
+- **Key Features**:
+  - Older tool, gradually replaced by DNF
+  - Simple interface but lacks some advanced features of DNF
+
+---
+
+#### Zypper
+- **Distributions**: openSUSE, SUSE Linux Enterprise
+- **Package Format**: `.rpm`
+- **Common Commands**:
+  - `sudo zypper refresh` — refresh repository metadata
+  - `sudo zypper install <package>` — install a package
+  - `sudo zypper update` — update system packages
+  - `sudo zypper remove <package>` — remove a package
+- **Key Features**:
+  - Efficient patch management and security updates
+  - Flexible repository handling
+  - Supports interactive and non-interactive modes
+
+---
+
+#### Pacman
+- **Distributions**: Arch Linux, Manjaro
+- **Package Format**: `.pkg.tar.zst`
+- **Common Commands**:
+  - `sudo pacman -Syu` — update system packages
+  - `sudo pacman -S <package>` — install a package
+  - `sudo pacman -R <package>` — remove a package
+- **Key Features**:
+  - Lightweight and fast
+  - Access to bleeding-edge software versions
+  - Integration with AUR (Arch User Repository) for community packages
+
+---
+
+#### Snap
+- **Supported On**: Ubuntu, Fedora, Arch Linux, Debian, and others
+- **Package Format**: Snap packages
+- **Common Commands**:
+  - `sudo snap install <package>` — install a Snap package
+  - `sudo snap refresh` — update all Snap packages
+- **Key Features**:
+  - Cross-distribution package format
+  - Contains all dependencies within a single package (sandboxed)
+  - Popular for delivering universal Linux apps
+
+---
+
+#### Flatpak
+- **Supported On**: Most major Linux distributions
+- **Common Commands**:
+  - `flatpak install <package>` — install a Flatpak package
+  - `flatpak update` — update Flatpak packages
+- **Key Features**:
+  - Cross-platform package management
+  - Sandboxed applications for added security
+  - Uses the Flathub repository for a wide selection of applications
+
+---
+
+### 3. Summary Table
+
+| Package Manager | Supported Distros                | Package Format      | Key Features                              |
+|-----------------|----------------------------------|---------------------|-------------------------------------------|
+| **APT**         | Debian, Ubuntu, Linux Mint       | `.deb`              | Easy to use, resolves dependencies        |
+| **DNF**         | Fedora, RHEL, CentOS (v8+)       | `.rpm`              | Fast, reliable, plugin support            |
+| **YUM**         | Older Fedora, CentOS, RHEL       | `.rpm`              | Simple, legacy systems                   |
+| **Zypper**      | openSUSE, SUSE                   | `.rpm`              | Patch management, flexible repositories   |
+| **Pacman**      | Arch Linux, Manjaro              | `.pkg.tar.zst`      | Lightweight, bleeding-edge software       |
+| **Snap**        | Ubuntu, Fedora, Debian, Arch     | Snap (sandboxed)    | Cross-platform, includes dependencies     |
+| **Flatpak**     | Most major distributions         | Flatpak (sandboxed) | Sandboxed, universal apps via Flathub     |
+
+
+
+
+
+
+
+
+
+
 ## 2. Визначте який менеджер пакетів використовує ваш дистрибутив Linux. Опишіть основні команди для роботи з ним. (Краснопір Богдан)
 
   Curently i'm using Kali Linux. It is Debian based distro, so it have APT package manager, like Ubuntu or other.
