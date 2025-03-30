@@ -1,5 +1,23 @@
 ## 1.1. В чому різниця при роботі з периферією у ОС Linux та ОС Windows? (Микитенко Назарій)
 
+**Difference in hardware compatibility and support:**
+
+> In Windows, due to its popularity, Windows has a wide range of hardware support. Most manufacturers provide drivers for their devices, which ensures their compatibility with this OS. This means that users rarely encounter problems when connecting new peripherals.
+
+> Linux supports many standard devices, such as monitors, mice, keyboards and USB drives, but there may be difficulties with less common or specialized devices, such as printers or scanners. Not all manufacturers provide drivers for Linux, which can make it difficult to use certain hardware.
+
+**Difference in driver installation:**
+
+> After installing the OS or connecting a new device, Windows automatically tries to find and install the necessary drivers. In the absence of automatic installation, users can download drivers from the manufacturer's official website or use the disk that came with the device.
+
+> In Linux, most drivers are integrated into the system kernel and are installed during OS installation. However, if the driver is not available, the user may need to look for alternative solutions, such as using open source drivers or compiling the driver from source.
+
+**Differences in file system and device management:**
+
+> In Windows, peripherals are displayed as separate drives (e.g. C:, D:, E:), which makes them easier to access through the graphical interface.
+
+> All devices connected to a Linux computer are integrated into a single tree-like file system. For example, a connected USB drive can be mounted in the /media/usb directory.
+
 ## 1.2. В чому суть операції монтування, для чого вона використовується та як? (Краснопір Богдан)
 
 Mounting is a conection process between drive device and operating system. If drive is not mounted you won't be able to do anything with it. So to make disk work you'll need to mount it.
