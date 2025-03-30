@@ -82,4 +82,69 @@ The basic components of motherboard:
 
 
 
+
+## Хід роботи (Клімчук Ярослав)
+### Таблиця для команд
+#### vi Editor Commands
+
+| Command/Key | Function |
+|------------|----------|
+| `vi myfile` | Open or create the file `myfile` in the vi editor |
+| `:wq` | Save the file and exit |
+| `dw` | Delete a word |
+| `u` | Undo the last operation |
+| `xxxx` | Delete four characters one by one |
+| `4u` | Undo the last four operations |
+| `dd` | Delete the current line |
+| `p` | Paste the deleted lines below the current line |
+
+#### Navigation and Editing in vi
+
+| Key/Command | Function |
+|------------|----------|
+| `1G` | Go to the beginning of the file |
+| `i` | Enter insert mode |
+| `l` | Move one character to the right |
+| `~` | Toggle case (lowercase ⇄ uppercase) |
+| `j` | Move down one line |
+| `10l` | Move 10 characters to the right |
+| `a` | Enter insert mode after the cursor |
+| `:x` | Save and exit |
+| `:wq` | Write to file and quit |
+| `:wq!` | Force write to a read-only file and quit |
+| `ZZ` | Save and exit (without `:`) |
+| `:q!` | Exit without saving |
+| `:e!` | Discard changes and reload the file |
+| `:w!` | Force write to a read-only file |
+
+#### Linux System Commands
+
+| Command | Description |
+|---------|------------|
+| `lscpu` | Display CPU information |
+| `head -n 20 /proc/cpuinfo` | Show the first 20 lines of the `/proc/cpuinfo` file |
+| `free -m` | Display RAM and swap usage in megabytes |
+| `free -g` | Display RAM and swap usage in gigabytes |
+| `lspci` | List connected PCI devices |
+| `lsusb` | List connected USB devices |
+| `lsmod` | View currently loaded kernel modules |
+| `fdisk` | Manage disk partitions |
+
+3.![Image](https://github.com/user-attachments/assets/17696c2d-9669-473f-948f-1396efa24024)
+
+![Image](https://github.com/user-attachments/assets/eb0ee609-bea3-45b4-a434-d9a8c784f325)
+
+![Image](https://github.com/user-attachments/assets/b2915bda-9e87-4e10-bac6-849954e4f4de)
+
+3.2 Приклад своєї програми
+
+![Image](https://github.com/user-attachments/assets/b520cae5-a801-4728-bd84-786eb7d54942)
+
+![Image](https://github.com/user-attachments/assets/151689d3-e046-45a3-8f18-5c0def3b6b79)
+
+![Image](https://github.com/user-attachments/assets/d50ee0e8-0e69-416d-9914-18c2bdc5ff5f)
+
+
+
+
 ## Контрольні запитання (Микитенко Назарій)
