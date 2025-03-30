@@ -148,3 +148,28 @@ The basic components of motherboard:
 
 
 ## Контрольні запитання (Микитенко Назарій)
+
+**1**.	В чому відмінність між командами arch та lscpu?
+
+The *arch* command in Linux displays the processor architecture. The *lscpu* command, on the other hand, provides detailed information about the processor, including architecture, operating modes (32-bit or 64-bit), manufacturer, model, number of cores, threads, and cache sizes.
+
+
+**2**.	Якою командою можна отримати інформацію про стан використання RAM поточною системою?
+
+You can use the *free -h* command to get information about the RAM usage status of the current system.
+
+**3**.	*Яким чином у скриптах можна опрацьовувати змінні та створювати розгалужені та циклічні сценарії?
+
+In Linux shell scripts, variables are created by assigning values: *variable_name=value*, and accessed via *$variable_name*. Branching is implemented using *if* and *case* constructs. *For*, *while*, and *until* loops are used to repeatedly execute blocks of code.
+
+**4**.	*Які команди для перегляду стану підключення периферійних пристроїв можна використати в терміналі? 
+
+In the Linux terminal, you can use commands such as *lsusb* (for USB devices), *lspci* (for PCI devices), and *dmesg* (to view kernel system messages) to check the connection status of peripherals.
+
+
+**5**.	**Які можливості застунку gparted? 
+
+GParted is a graphical partition editor for Linux that allows you to create, delete, resize, move, verify, and copy disk partitions and their file systems. It is useful for making space for new operating systems, reorganizing disk usage, copying data, and creating disk images. GParted supports various file systems, including *ext2, ext3, ext4, FAT16, FAT32, HFS, HFS+, JFS, Linux-swap, ReiserFS, Reiser4, UFS, XFS, and NTFS.*
+
+## Висновки
+During the laboratory work, the basics of working with the Bash command shell were examined, in particular, creating and executing scripts. The basic commands for editing text files in the vi editor were introduced, as well as system commands for obtaining information about the computer's hardware. A custom script was created that demonstrates the use of variables, conditional operators, and loops. The basic concepts related to file systems, disk partitions, and connecting peripheral devices were also examined.
