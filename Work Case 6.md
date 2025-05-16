@@ -28,3 +28,8 @@ Example: after creation of user i use `group` command to see if user is added to
 
 ![зображення](https://github.com/user-attachments/assets/9a50f825-ab97-4724-9af5-93560e6b066d)
 
+## 3. Надання командного інтерпритатора
+
+![Image](https://github.com/user-attachments/assets/f09d6964-4f01-4bce-b1d0-494237d7ffc4)
+
+![Image](https://github.com/user-attachments/assets/3afe85b6-5018-4d2b-a476-6e94bc4a1d1c)
