@@ -1,5 +1,99 @@
 ## Завдання для попередньої підготовки (Микитенко Назарій)
 
+## Хід роботи(Клімчук Ярослав)
+
+
+### 1. Приклади команд та їх функції
+| **Command**       | **Purpose and Functionality**                                                                 |
+|-------------------|-----------------------------------------------------------------------------------------------|
+| `ps`              | Displays information about active processes.                                                  |
+| `top`             | Provides real-time overview of system resource usage and running processes.                    |
+| `sysctl`          | Views or modifies kernel parameters at runtime.                                               |
+| `cat`             | Concatenates and displays the content of files.                                              |
+| `su`              | Switches user context (commonly used to become the root user).                                |
+| `ls /proc`        | Lists the contents of the `/proc` virtual filesystem, which contains system and process info. |
+| `jobs`            | Shows background jobs started in the current shell session.                                  |
+| `ping`            | Sends ICMP echo requests to test network connectivity to a host.                             |
+| `fg %1`           | Brings background job with ID 1 to the foreground.                                           |
+| `bg %1`           | Resumes a stopped job with ID 1 in the background.                                           |
+| `kill %3`         | Sends a signal (default: SIGTERM) to the job with ID 3.                                     |
+| `killall ping`    | Sends a signal to all processes with the name `ping`.                                       |
+| `pkill`           | Sends signals to processes based on name and other attributes (more flexible than `killall`).|
+| `ifconfig`        | Configures or displays network interfaces (deprecated in favor of `ip` command).             |
+| `route`           | Displays or modifies the IP routing table.                                                  |
+| `dig`             | Performs DNS lookups and displays detailed DNS query results.                               |
+| `netstat`         | Displays network connections, routing tables, and interface statistics (deprecated for `ss`).|
+
+### 2. Практичні завндання
+
+#### Команла cat для чого використовується
+
+The cat command (short for concatenate) is used to:
+
+- create new files.
+- view the contents of files.
+- concatenate multiple files.
+- redirect output to another file.
+- format output (numbering, removing blank lines, displaying non-printing characters).
+
+#### Приклади команди cat
+Створення й перегляд файлу
+
+![Image](https://github.com/user-attachments/assets/b9168d80-ac8b-41b3-8c5c-d4f92ac5c8a0)
+
+Перенаправлення в інший файл
+
+![Image](https://github.com/user-attachments/assets/bb9a83ae-964d-40c7-8aa1-df69001f0940)
+
+Склеювання файлів в один
+
+![Image](https://github.com/user-attachments/assets/729da667-d7ff-4a1c-82a9-add6bea72266)
+
+Номерування рядків
+
+![Image](https://github.com/user-attachments/assets/6bacfe42-974a-4bac-a758-67108e84966d)
+
+Відобразити недруковані символи
+
+![Image](https://github.com/user-attachments/assets/ff7b113f-e06a-484e-8b8f-231f029fa1d6)
+
+Видалити порожні рядки 
+
+![Image](https://github.com/user-attachments/assets/99ced45d-adc2-44af-b5a6-31b7ed782064)
+
+#### Можливості команди dig
+The dig command is used to query DNS servers, obtaining information about:
+
+- IP ​​addresses of domains (A/AAAA records);
+- mail servers (MX);
+- DNS servers (NS);
+-text records (TXT);
+- tracing DNS requests (+trace).
+
+![Image](https://github.com/user-attachments/assets/fe133a02-0656-4b0a-8b1e-d09ed288acb8)
+
+#### Можливості команди netstat
+
+The netstat command shows:
+
+- active network connections;
+- open ports;
+- interface statistics;
+- PIDs/names of processes listening on ports.
+
+netstat -a
+
+![Image](https://github.com/user-attachments/assets/52063f0a-93a3-4abf-bb5c-e5d5ba461108)
+
+netstat -tulpn 
+
+![Image](https://github.com/user-attachments/assets/f7ea928e-e156-4f8f-be30-a4b371a0cc94)
+
+netstat -i 
+
+![Image](https://github.com/user-attachments/assets/00b52932-33ad-4de4-a32f-fb9e59232287)
+
+
 
 ## Відповіді на контрольні запитання (Краснопір Богдан) 
 
