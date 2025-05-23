@@ -1,4 +1,94 @@
+# Лабораторна робота №8
+
+
+## Тема: Збереження службових даних системи та її мережева конфігурація
+
+
+## Мета: 
+
+
+1. Отримання практичних навиків роботи з командною оболонкою Bash.
+   
+2. Знайомство з базовими структурами для збереження системних даних - процеси, память, лог-файли  та повідомлення про стан ядра.
+   
+3. Знайомство зі стандартом FHS.
+   
+4. Знайомство з діями при налаштуванні мережі.
+   
+
+
 ## Завдання для попередньої підготовки (Микитенко Назарій)
+
+### Словник термінів
+
+
+**/proc** - Псевдофайлова система, яка містить інформацію про поточні процеси та конфігурацію ядра.
+
+**/sys** - Псевдофайлова система для доступу до інформації про пристрої.
+
+**/dev** - Каталог спеціальних файлів, які представляють пристрої (диски, термінали, тощо).
+
+**FHS (Filesystem Hierarchy Standard)** - Стандарт ієрархії файлової системи у Linux. Визначає структуру каталогів.
+
+**/var/log** - Каталог, у якому зберігаються журнали системних подій.
+
+**PID (Process ID)** - Унікальний ідентифікатор процесу.
+
+**Віртуальна пам’ять** - Механізм, який дозволяє процесам використовувати більше пам’яті, ніж фізично доступно.
+
+### Відповіді на питання 
+
+#### 1. Розкрийте поняття “псевдо файлової системи”, для чого воно потрібно системі?
+
+Псево файлова система - it is a structure that looks like a regular file system but is not stored on a physical disk. It exists in RAM and is used to access system information, such as information about processes, memory, or kernel configuration.
+
+#### 2. Чому користувачі не так часто звертаються на пряму до каталогу /proc, яким чином з нього можна отримати інформацію?
+
+The /proc directory contains a lot of system information, but the structure and contents of the files in it are not always clear to the average user.
+• cat /proc/cpuinfo — processor information;
+• cat /proc/meminfo — memory information;
+• ls /proc/<PID> — data about a specific process.
+
+
+#### 3. Яке призначення файлів /proc/cmdline, /proc/meminfo та /proc/modules?
+
+ /proc/cmdline — parameters passed to the kernel during system boot.
+ /proc/meminfo — information about current memory usage.
+ /proc/modules — a list of modules loaded into the kernel.
+ 
+#### 4. Яке призначення команди free?
+
+The free command displays the amount of free and used memory on the system, including buffers and cache. The free -s 10 command refreshes this data every 10 seconds.
+
+#### 5. Для чого потрібні лог-файли, наведіть приклади їх застосування?
+
+Log files store messages about the operation of the system, services, errors, access attempts, etc. They are important for diagnostics, fault tracking, and auditing.
+• /var/log/messages — general system messages.
+• /var/log/secure — authorization messages.
+• /var/log/cron — log of scheduled task launches.
+• /var/log/boot.log — log of service startup during system boot.
+
+#### 6. Яке призначення файлу /var/log/dmesg?
+
+The file contains kernel messages generated during system boot. These messages help identify problems loading devices or drivers.
+
+#### 7. Для чого розроблено FHS?
+
+The FHS is a standard that defines the directory structure in Linux. The goal is to ensure a consistent, compatible, and understandable file system across distributions. For example, /bin, /etc, /usr, /var have the same meaning on all systems that follow the FHS.
+
+#### 8. Які основні команди є у Linux для перегляду та конфігурації мережі
+|Команда | Призначення |
+|--------------------|-----------------------|
+|`ifconfig`|View and configure network interfaces.|
+|`ip addr show`|displays the IP addresses of the interfaces.|
+|`ping`|Checking the availability of another host on the network.|
+|`netstat`|Shows network connections, routing tables, statistics.|
+|`dig`|Executes DNS queries, checks the correct operation of DNS servers.|
+|`host`|Determining an IP address by hostname or vice versa.|
+|`traceroute`|Determines a route to another host over a network.|
+|`route`|Displays the routing table.|
+|`ssh user@host`|Connecting to a remote computer over a secure connection.|
+
 
 ## Хід роботи(Клімчук Ярослав)
 
@@ -152,3 +242,5 @@ System configurations are located in few directories: /etc (services, network an
 Для того, щоб вивести параметри лише певного мережевого інтерфейсу, треба після команди `ifconfig` вказати його назву. Це матиме такий вигляд: `ifconfig eth1`. Замість eth1 пишемо іншу потрібну назву інтерфейсу.
 
 ## Висновок (Микитенко Назарій)
+
+During laboratory work No. 8, practical skills in working with the Bash command shell were acquired and the basic elements of the Linux operating system related to process management, memory, logging, and networking were studied. The structure of the /proc and /sys pseudo-file systems was considered, which provide access to dynamic information about the state of the system and the kernel. The basics of storing logs in the /var/log directory and the mechanisms for processing them were also studied. Based on theoretical material and practical tasks, a table of commands was formed with a description of their purpose, typical network and system operations were performed in the Linux CLI environment, and answers to control questions were prepared.
