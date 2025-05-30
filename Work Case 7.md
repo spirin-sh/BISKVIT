@@ -51,3 +51,7 @@ Example:
 
 ![зображення](https://github.com/user-attachments/assets/91d4ff02-b98e-408b-9321-8d89c23b8ca7)
 
+Завдання 3.
+
+![Image](https://github.com/user-attachments/assets/1aeb0a3d-357f-46f3-9432-fa983d842747)
+
