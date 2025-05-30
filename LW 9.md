@@ -126,5 +126,87 @@ UPG (User Private Group) - це спеціальна група користув
 
 ![10 2](https://github.com/user-attachments/assets/bdab3fa6-9081-47f6-a48c-2b11d2d3c755)
 
+## Відповіді на контрольні питання (Клімчук Ярослав)
 
+### 1. Why are passwords not stored in plain text in configuration files?
+Passwords are sensitive data. Storing them in plain text would make them easily accessible to anyone who gains access to the file system. To protect against unauthorized access, passwords are hashed and stored in secure files such as /etc/shadow. This way, even if someone accesses the file, they cannot directly retrieve the original password.
+
+### 2. Why is it not recommended to perform everyday operations using the root account?
+Logging in as root is dangerous because:
+
+All processes run with unrestricted privileges, increasing the risk of system damage from mistakes.
+
+You may forget you're logged in as root and unintentionally run harmful commands.
+
+Applications like browsers or email clients run without restrictions, increasing the risk of exploits.
+
+Graphical environments running as root are especially vulnerable since many programs are executed with full privileges.
+Because of these risks, many distributions (like Ubuntu) disable root login and encourage using sudo instead.
+
+### 3. What is the difference between su and sudo for obtaining elevated privileges?
+
+su switches the user to another account (commonly root) and requires the root password.
+
+sudo allows a regular user to run specific commands with root privileges using their own password, as configured in /etc/sudoers.
+This makes sudo more secure and auditable, since all usage is logged.
+
+### 4. Why is the root user's home directory not located under /home?
+The root user's home is /root to isolate it from regular user data. This improves system reliability and security:
+
+If /home is on a separate partition and fails to mount, root still has access to its home directory.
+
+Separation also avoids accidental exposure of system-critical files to regular users.
+
+### 5. What is the purpose of the getent command?
+getent is used to query administrative databases configured in /etc/nsswitch.conf, such as:
+
+getent passwd → Shows user accounts.
+
+getent group → Shows group accounts.
+It supports both local and network-based authentication systems (like LDAP), making it useful for mixed environments.
+
+### 6. How can a user's password be changed?
+The passwd command is used:
+
+Regular users: passwd → Changes their own password.
+
+Root user: passwd username → Changes another user’s password.
+
+### 7. How can existing groups be deleted? Will any information about them remain?
+Use groupdel groupname to delete a group.
+After deletion:
+
+Group entries are removed from /etc/group.
+
+Any files with the deleted group’s GID will still retain the numeric GID, but no name will be associated.
+
+Users previously in the group will no longer have that group in their memberships.
+
+### 8. What is the purpose of the chage command?
+chage manages password expiration policies:
+
+Set maximum and minimum password age.
+
+Force password change at next login.
+
+Lock accounts after a certain number of inactive days.
+
+Example:
+
+chage -l username 
+chage -M 90 username  
+
+### 9. What are the most commonly used usermod options?
+
+-aG group1,group2 – Add user to additional groups (with -a to append).
+
+-d /new/home – Set new home directory.
+
+-s /bin/shell – Change login shell.
+
+-L / -U – Lock or unlock account.
+
+-c "comment" – Change the comment field.
+
+-g gid or -G groupnames – Change primary or secondary groups.
 
