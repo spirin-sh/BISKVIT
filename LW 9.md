@@ -210,3 +210,13 @@ chage -M 90 username
 
 -g gid or -G groupnames – Change primary or secondary groups.
 
+### Висновок 
+
+In Linux, there are regular user accounts (UID > 500 or > 1000), system accounts (UID 1–499), and root (UID 0). System accounts are not intended for logging in to the system; they are used to run services.
+
+The home directory of the root user is located in /root, not /home, to ensure accessibility regardless of the /home partition.
+
+Users can be members of multiple groups, which allows for flexible management of access rights. The primary group is repeated in the /etc/passwd file, and the secondary group is in /etc/group. On some systems, a private group is automatically created for each user (User Private Group).
+
+Groups can organize joint work on files, for example, within the same project. The groupadd, groupmod, and groupdel commands are used to manage groups. Deleting a group before its name disappears, but the GID may remain in the file system.
+
